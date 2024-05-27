@@ -4,7 +4,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 const statusMessage = document.getElementById('status-message');
 
-const startDate = new Date('2024-05-22T00:00:00');
+const startDate = new Date('2024-05-28T00:00:00');
 const endDate = new Date(startDate.getFullYear() + 2, startDate.getMonth(), startDate.getDate());
 
 function updateCounter() {
@@ -31,7 +31,7 @@ function updateCounter() {
     hoursElement.innerText = hours;
     minutesElement.innerText = minutes;
     secondsElement.innerText = seconds;
-    statusMessage.innerText = `${pastDays} days have passed since May 22, 2024.`;
+    statusMessage.innerText = `${pastDays} days have passed since May 28, 2024.`;
 }
 
 setInterval(updateCounter, 1000);
